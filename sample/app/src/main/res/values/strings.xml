@@ -39,4 +39,12 @@
         <item>Flight Path</item>
         <item>Fly Zone Border</item>
     </string-array>
+    <string-array name="panoTypeArray">
+        <item>15%</item>
+        <item>25%</item>
+        <item>30%</item>
+        <item>HDRPano 25%</item>
+        <item>HDRPano 20%</item>
+    </string-array>
+
 </resources>
