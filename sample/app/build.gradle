@@ -55,6 +55,12 @@ android {
 dependencies {
     compile 'com.dji:dji-uxsdk:4.7'
     provided ('com.dji:dji-sdk-provided:4.7')
+    compile ('com.dji:dji-sdk:4.7', {
+        // if your app needn't support Mavic 2 Pro and Mavic 2 Zoom, please exclude the library-anti-distortion module
+        // like following:
+         exclude module: 'library-anti-distortion'
+    })
+    provided 'com.dji:dji-sdk-provided:4.7'
 
     compile 'com.amap.api:map2d:5.2.0'
     compile 'com.amap.api:3dmap:5.5.0'
